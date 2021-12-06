@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<title>OVERLAY</title>
+<style>
+.content{
+position:relative;
+width:50%;
+}
+.image{
+display:block;
+width:100%
+height:auto;
+}
+.overlay{
+position:absolute;
+top:0px;
+bottom:0px;
+left:0px;
+right:0px;
+height:1000%;
+width:100%
+opacity:0;
+transtion: .5s ease;
+background-color:yellow;
+}
+.conten:hover .overlay{opacity:1;}
+.text{
+ color:white;
+ font-size:20px;
+ position:absolute;
+top:50%;
+bottom:50%;
+transform:translate(-50%, -50%)
+}
+</style>
+<body>
+<div class="content">
+<img src="street.jpg" alt="street" class="image">
+<div class="overlay">
+<div class"text">hii!!!</div>
+</div>
+</body>
+</html>
